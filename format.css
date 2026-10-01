@@ -1,0 +1,24 @@
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: palevioletred;
+            text-align: center;
+        }
+        b {
+            color: pink;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .sorot {
+            color: red;
+            font-weight: bold;
+        }
+        .tengah {
+            text-align: center;
+        }
+        .kanan {
+            text-align: right;
+        }
+        #artikel {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+            color: blue;
+        }

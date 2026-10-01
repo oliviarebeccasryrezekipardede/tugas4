@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendataan Diri</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌷 Pendataan Diri 🌷</h1>
+        <p class="subtitle">Yuk, lengkapi data diri kamu! 💗</p>
+
+        <form action="#" method="post">
+
+            <label for="nama">👤 Nama Lengkap</label>
+            <input type="text" id="nama" name="nama"
+                   placeholder="Masukkan nama lengkap" required>
+
+            <label for="password">🔐 Password</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Masukkan password" required>
+
+            <label for="prodi">🎓 Program Studi</label>
+            <select id="prodi" name="prodi">
+                <option value="">-- Pilih Program Studi --</option>
+                <option value="ilkom">S1 Ilmu Komputer</option>
+                <option value="ti">S1 Teknologi Informasi</option>
+                <option value="it">S2 Teknologi Informatika</option>
+                <option value="sdkb">S2 Sains Data dan Kecerdasan Buatan</option>
+                <option value="ilkom">S3 Ilmu Komputer</option>
+            </select>
+
+            <label>⚧ Jenis Kelamin</label>
+            <div class="pilihan">
+                <input type="radio" id="laki" name="jenis_kelamin"
+                       value="Laki-laki">
+                <label for="laki">Laki-laki</label>
+
+                <input type="radio" id="perempuan" name="jenis_kelamin"
+                       value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+            </div>
+
+            <label>💖 Hobi</label>
+            <div class="checkbox">
+                <input type="checkbox" id="memasak" name="hobi"
+                       value="Memasak">
+                <label for="memasak">🍳 Memasak</label> <br>
+
+                <input type="checkbox" id="musik" name="hobi"
+                       value="Mendengarkan Musik">
+                <label for="musik">🎧 Mendengarkan Musik</label><br>
+
+                <input type="checkbox" id="game" name="hobi"
+                       value="Bermain Game">
+                <label for="game">🎮 Bermain Game</label>
+            </div>
+
+            <label for="alamat">📍 Alamat Asal</label>
+            <textarea id="alamat" name="alamat"
+                      placeholder="Tuliskan alamat asal kamu..."></textarea>
+
+            <label for="alasan">💡 Alasan Memilih Jurusan Tersebut</label>
+            <textarea id="alasan" name="alasan"
+                      placeholder="Ceritakan alasan kamu memilih jurusan tersebut..."></textarea>
+
+            <label for="cita">🚀 Cita-cita / Tujuan</label>
+            <textarea id="cita" name="cita"
+                      placeholder="Apa cita-cita kamu setelah lulus?"></textarea>
+
+            <button type="submit">💌 Kirim Data</button>
+        </form>
+    </div>
+
+</body>
+</html>

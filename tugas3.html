@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #dff3ff;
+        }
+
+        .kalkulator {
+            width: 400px;
+            margin: 80px auto;
+            padding: 25px;
+            background-color: #fff0f5;
+            border: 2px solid #f3a6bd;
+            border-radius: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #e783a2;
+        }
+
+        p {
+            color: #555;
+        }
+
+        input {
+            width: 230px;
+            padding: 8px;
+            margin-left: 10px;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 10px 18px;
+            margin: 5px;
+            border: none;
+            border-radius: 10px;
+            background-color: #bde7f7;
+            color: #444;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #f5b5ca;
+        }
+
+        #output {
+            background-color: #eeeeee;
+        }
+
+        .hati {
+            text-align: center;
+            color: #e783a2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="kalkulator">
+
+        <h2>🔎 Kalkulator 🔍</h2>
+
+        <p>
+            Input Bilangan 1
+            <input type="number" id="bilangan1">
+        </p>
+
+        <p>
+            Input Bilangan 2
+            <input type="number" id="bilangan2">
+        </p>
+
+        <p>
+            <button onclick="hitung('jumlah')">+</button>
+            <button onclick="hitung('kurang')">−</button>
+            <button onclick="hitung('kali')">×</button>
+            <button onclick="hitung('bagi')">/</button>
+        </p>
+
+        <p>
+            Output
+            <input type="text" id="output" readonly>
+        </p>
+
+        <p class="hati">
+            ♡ Semangat belajar! ♡
+        </p>
+
+    </div>
+
+
+    <script>
+
+        function hitung(operasi) {
+
+            let bilangan1 = Number(
+                document.getElementById("bilangan1").value);
+            let bilangan2 = Number(
+                document.getElementById("bilangan2").value);
+            let hasil;
+
+            if (operasi == "jumlah") {
+                hasil = bilangan1 + bilangan2;
+            }
+
+            else if (operasi == "kurang") {
+                hasil = bilangan1 - bilangan2;
+            }
+
+            else if (operasi == "kali") {
+                hasil = bilangan1 * bilangan2;
+            }
+
+            else if (operasi == "bagi") {
+
+                if (bilangan2 != 0) {
+                    hasil = bilangan1 / bilangan2;
+                }
+
+                else {
+                    hasil = "Tidak bisa dibagi 0";
+                }
+            }
+
+            document.getElementById("output").value = hasil;
+        }
+
+    </script>
+
+</body>
+</html>
