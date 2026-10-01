@@ -1,0 +1,64 @@
+body {
+    background-color: #fffdf5;
+}
+
+.navbar {
+    background-color: #198754;
+}
+
+.hero-section {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.1) 100%), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqktLOHzBFxIt6NNBi_-4_5UHrSotbPxu3NaXCgGgZJA&s=10');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 200px 100px;
+}
+
+#hero h1 {
+    color: #198754;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.hero-container {  
+    justify-content: space-between;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.card {
+    height: 100%;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+footer {
+    background-color: #198754;
+    color: white;
+    padding: 20px;
+}
